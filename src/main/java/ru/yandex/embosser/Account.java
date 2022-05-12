@@ -9,10 +9,6 @@ public class Account {
     }
 
     public boolean checkNameToEmboss() {
-        /*
-             Этот метод должен проверять, что сохранённая через конструктор строка соответствует требованиям.
-             Если строка удовлетворяет условиям, метод возвращает true, иначе — false.
-         */
-        return false;
+        return name!=null&&name.matches("(?=^\\D{3,19}$)([A-Za-zА-Яа-я]+\\s+[A-Za-zА-Яа-я]+$)");
     }
 }
