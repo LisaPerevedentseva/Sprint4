@@ -17,7 +17,7 @@ public class ParameterizedTestOfAccount {
         this.expected = expected;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: name: {0}")
     public static Object[][] getDataForTest() {
         return new Object[][] {
                 {"ТРУФФАНОВ ВЛАДИСЛАВ", true}, // ровно 19 символов
